@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: ili-sistema-operativo
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_PATH
+        value: /data/ili_management.db
+    disk:
+      name: ili-db-data
+      mountPath: /data
+      sizeGB: 1
