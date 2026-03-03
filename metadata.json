@@ -1,0 +1,5 @@
+{
+  "name": "Sistema ILI - Gestión Operativa",
+  "description": "Sistema integral para la gestión de refrigeración y mantenimiento: presupuestos, CRM, tareas y agenda.",
+  "requestFramePermissions": ["geolocation"]
+}
